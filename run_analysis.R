@@ -24,9 +24,12 @@ y_all <- rbind (y_train, y_test)
 sub_all <- rbind (sub_train, sub_test)
 
 data_all <- cbind(y_all, sub_all, x_all)
+
+# name the columns with descriptive variable names
 names(data_all) <- c("Activity Label", "Subject", features[,2])
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+# extracts all the variable with "mean()" or "std()"
 mean_std_index <- grep("mean\\(\\)|std\\(\\)", names(data_all))
 data_sub <- data_all[, c(1, 2, mean_std_index)]
 
@@ -37,6 +40,7 @@ levels(data_sub$"Activity") <- list("Walking" =  "1", "Walking Upstair" = "2",
                                     "Standing" = "5", "Laying" = "6")
 
 # 4. Appropriately labels the data set with descriptive variable names. 
+# use the original variable name, but without all the "()"
 v_names <- gsub("\\(\\)", "", names(data_sub))
 names(data_sub) <- v_names
 
@@ -45,11 +49,14 @@ f_activity <- factor(data_sub$"Activity")
 f_activity_l <- factor(data_sub$"Activity Label")
 f_subjects <- factor(data_sub$"Subject")
 
+# apply mean function only to the feature data "mean" and "std"
 numeric_index <- grep("mean|std", names(data_sub))
 ave_data_sub <- aggregate(data_sub[, numeric_index], by = list(f_activity, f_activity_l, 
                                                                f_subjects), FUN = "mean")
+# label the aggregated variables
 names(ave_data_sub)[1:3]<- c("Activity", "Activity Label", "Subject")
 
+# write the data into the working directory as .txt file
 write.table(ave_data_sub, "ave_data_sub.txt", row.names = FALSE)
 
 
