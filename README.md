@@ -29,4 +29,4 @@ You should create one R script called run_analysis.R that does the following.
 - Please make sure that the data zip file is located in the working directory.
 - Please do NOT unzip the file mannually before running the script
 - The script will create a tidy data and write into the working directory as "ave_data_sub.txt"
-- Please refer to the code book file "code_book.pdf" for explainations for the variables.
+- Please refer to the code book file "code_book.md" for explainations for the variables.
