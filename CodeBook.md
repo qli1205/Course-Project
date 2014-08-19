@@ -1,13 +1,13 @@
 **Variables in the Ouput Data**
-- *Activity*        the descriptive names of the activity
-- *Activity Label*  the label for the 6 activities
-                    1 Walking
-                    2 Walking Upstair
-                    3 Walking Downstair
-                    4 sitting
-                    5 Standing
-                    6 Laying
-- *Subject*         subject identities, who performed the activity
+- *Activity*        - the descriptive names of the activity
+- *Activity Label*  - the label for the 6 activities
+                    - 1 Walking
+                    - 2 Walking Upstair
+                    - 3 Walking Downstair
+                    - 4 sitting
+                    - 5 Standing
+                    - 6 Laying
+- *Subject*         - subject identities, who performed the activity
 
 - Feature Names Rules    
     time domain signals (prefix 't' to denote time)
