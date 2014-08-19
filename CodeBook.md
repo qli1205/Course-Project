@@ -38,10 +38,10 @@
 - *y_all*           - the merged activity label data
 - *sub_all*         - the merged subject data
 
-- *data_all*        the merged data set from training and testing, including activity label, subject and feature data
-- *mean_std_index*  the index of the variables with "mean()" or "std()"
-- *data_sub*        the extracted dataset from data_all, with the variables only for mean() and std()
+- *data_all*        - the merged data set from training and testing, including activity label, subject and feature data
+- *mean_std_index*  - the index of the variables with "mean()" or "std()"
+- *data_sub*        - the extracted dataset from data_all, with the variables only for mean() and std()
 
-- *v_names*         the descriptive variable name, basically are the original variable in features, but without all the "()"
+- *v_names*         - the descriptive variable name, basically are the original variable in features, but without all the "()"
 
-- *ave_data_sub*    the tidy data set with average of each variable for each activity and each subject
+- *ave_data_sub*    - the tidy data set with average of each variable for each activity and each subject
