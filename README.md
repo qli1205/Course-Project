@@ -30,3 +30,9 @@ You should create one R script called run_analysis.R that does the following.
 - Please do NOT unzip the file mannually before running the script
 - The script will create a tidy data and write into the working directory as "ave_data_sub.txt"
 - Please refer to the code book file "CodeBook.md" for explainations for the variables.
+
+**Run the Script**
+- Please type the following to run the script
+
+  *source("run_analysis.R")*
+  *run_analysis()*
