@@ -35,4 +35,5 @@ You should create one R script called run_analysis.R that does the following.
 - Please type the following to run the script
 
   *source("run_analysis.R")*
+  
   *run_analysis()*
